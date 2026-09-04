@@ -1,0 +1,353 @@
+:root {
+  --1fi-purple: #3B1280;
+  --1fi-purple-light: #4D1DB3;
+  --1fi-bg-main: #FFFFFF;
+  --1fi-bg-body: #121212; /* Dark outside the app container like the screenshot */
+  --1fi-search-bg: #F5F6F8;
+  --1fi-text-main: #1C1C1C;
+  --1fi-text-muted: #848484;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--1fi-bg-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-container {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--1fi-bg-main);
+  position: relative;
+  padding-bottom: 80px;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+.hero-header {
+  background-color: var(--1fi-purple);
+  padding: 40px 24px 60px 24px;
+  color: white;
+  position: relative;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.hero-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+  max-width: 70%;
+}
+
+/* Tabs Styles */
+.tabs-wrapper {
+  padding: 0 24px;
+  margin-top: -24px; /* Overlaps the purple header */
+  position: relative;
+  z-index: 10;
+}
+
+.tabs-container {
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  padding: 4px;
+}
+
+.tab-button {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 12px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--1fi-text-muted);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-button.active {
+  color: var(--1fi-purple);
+}
+
+.tab-indicator {
+  width: 20px;
+  height: 3px;
+  background-color: var(--1fi-purple);
+  border-radius: 4px;
+  margin-top: 4px;
+  position: absolute;
+  bottom: 2px;
+}
+
+/* Content Styles */
+.content-area {
+  padding: 24px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--1fi-search-bg);
+  border-radius: 30px;
+  padding: 12px 20px;
+  margin-bottom: 24px;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: var(--1fi-text-main);
+  margin-left: 12px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--1fi-text-main);
+}
+
+/* Card Styles */
+.product-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  border: 1px solid #F0F0F0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.product-card:active {
+  transform: scale(0.98);
+}
+
+.product-image-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #F8F8F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  padding: 4px;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--1fi-text-main);
+  margin-bottom: 4px;
+}
+
+.product-subtitle {
+  font-size: 12px;
+  color: var(--1fi-text-muted);
+}
+
+.emi-button {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--1fi-purple);
+  background-color: rgba(59, 18, 128, 0.08);
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 480px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0 20px 0;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.03);
+  z-index: 100;
+  border-top: 1px solid #F0F0F0;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--1fi-text-muted);
+  cursor: pointer;
+}
+
+.nav-item.active {
+  color: var(--1fi-purple);
+}
+
+.nav-label {
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* Product Details Styles */
+.back-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--1fi-text-muted);
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.details-container {
+  background-color: white;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  border: 1px solid #F0F0F0;
+}
+
+.details-image {
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.details-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--1fi-text-main);
+}
+
+.details-desc {
+  font-size: 13px;
+  color: var(--1fi-text-muted);
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.details-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--1fi-purple);
+}
+
+.emi-header {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--1fi-text-main);
+}
+
+.emi-card {
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.emi-card.selected {
+  border-color: var(--1fi-purple);
+  background-color: rgba(59, 18, 128, 0.03);
+}
+
+.emi-duration {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--1fi-text-main);
+}
+
+.emi-interest {
+  font-size: 12px;
+  color: var(--1fi-text-muted);
+  margin-top: 4px;
+}
+
+.emi-installment {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--1fi-purple);
+}
+
+.proceed-button {
+  width: 100%;
+  background-color: var(--1fi-purple);
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  margin-top: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.proceed-button:disabled {
+  background-color: #D3D3D3;
+  cursor: not-allowed;
+}
+
+body {
+  background-color: #F4F5F7 !important;
+  color: #1C1C1C !important;
+  -webkit-font-smoothing: antialiased;
+}

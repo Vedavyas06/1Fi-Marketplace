@@ -16,7 +16,7 @@ const products = [
   },
   {
     name: "Sony WH-1000XM5",
-    image: "https://m.media-amazon.com/images/I/51aXvjzcukL._SX522_.jpg",
+    image: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400",
     basePrice: 29990,
     description: "Industry leading noise canceling headphones.",
     variants: [
@@ -30,41 +30,36 @@ const products = [
   },
   {
     name: "Apple MacBook Air M2",
-    image: "https://m.media-amazon.com/images/I/71f5Eu5lJ4L._SX679_.jpg",
+    image: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=400&hei=400&fmt=jpeg&qlt=90",
     basePrice: 114900,
     description: "Supercharged by M2. Strikingly thin design with all-day battery life.",
     variants: [
-      { name: "8GB RAM, 256GB SSD Space Grey", price: 114900 },
-      { name: "8GB RAM, 512GB SSD Space Grey", price: 134900 }
+      { name: "8GB RAM, 256GB SSD", price: 114900 }
     ],
     emiOptions: [
       { durationMonths: 3, interestRate: 0, monthlyInstallment: 38300 },
-      { durationMonths: 6, interestRate: 0, monthlyInstallment: 19150 },
-      { durationMonths: 12, interestRate: 10, monthlyInstallment: 10532 }
+      { durationMonths: 6, interestRate: 0, monthlyInstallment: 19150 }
     ]
   },
   {
     name: "Samsung Galaxy S24 Ultra",
-    image: "https://m.media-amazon.com/images/I/71WcjZXO-aL._SX679_.jpg",
+    image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?q=80&w=400",
     basePrice: 129999,
-    description: "Welcome to the era of mobile AI. Empower yourself with the Galaxy S24 Ultra.",
+    description: "Welcome to the era of mobile AI. Empower yourself.",
     variants: [
-      { name: "12GB RAM, 256GB Titanium Gray", price: 129999 },
-      { name: "12GB RAM, 512GB Titanium Gray", price: 139999 }
+      { name: "256GB Titanium Gray", price: 129999 }
     ],
     emiOptions: [
-      { durationMonths: 3, interestRate: 0, monthlyInstallment: 43333 },
-      { durationMonths: 6, interestRate: 0, monthlyInstallment: 21666 }
+      { durationMonths: 3, interestRate: 0, monthlyInstallment: 43333 }
     ]
   },
   {
     name: "Apple iPad Air (5th Gen)",
-    image: "https://m.media-amazon.com/images/I/61XZQXFQeVL._SX679_.jpg",
+    image: "https://iclusters.in/cdn/shop/files/264352_j5lh0u.webp?v=1772366317",
     basePrice: 59900,
     description: "Light. Bright. Full of might. Powered by the Apple M1 chip.",
     variants: [
-      { name: "64GB Wi-Fi Space Grey", price: 59900 },
-      { name: "256GB Wi-Fi Space Grey", price: 74900 }
+      { name: "64GB Wi-Fi Space Grey", price: 59900 }
     ],
     emiOptions: [
       { durationMonths: 3, interestRate: 0, monthlyInstallment: 19966 },
@@ -73,73 +68,62 @@ const products = [
   },
   {
     name: "Nintendo Switch OLED Model",
-    image: "https://m.media-amazon.com/images/I/51yJ+OqCZbL._SX679_.jpg",
+    image: "https://images.unsplash.com/photo-1617096200347-cb04ae810b1d?q=80&w=400",
     basePrice: 34990,
     description: "Play at home or on the go with a vibrant 7-inch OLED screen.",
     variants: [
-      { name: "White Joy-Con", price: 34990 },
       { name: "Neon Red/Blue Joy-Con", price: 34990 }
     ],
     emiOptions: [
-      { durationMonths: 3, interestRate: 0, monthlyInstallment: 11663 },
-      { durationMonths: 6, interestRate: 8, monthlyInstallment: 6123 }
+      { durationMonths: 3, interestRate: 0, monthlyInstallment: 11663 }
     ]
   },
   {
     name: "Dyson V12 Detect Slim",
-    image: "https://m.media-amazon.com/images/I/51wB7-M6WvL._SX679_.jpg",
+    image: "https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=400",
     basePrice: 55900,
     description: "Lightweight cordless vacuum with laser dust detection.",
     variants: [
-      { name: "V12 Detect Slim Absolute", price: 55900 },
-      { name: "V12 Detect Slim Extra", price: 59900 }
+      { name: "V12 Detect Slim Absolute", price: 55900 }
     ],
     emiOptions: [
-      { durationMonths: 3, interestRate: 0, monthlyInstallment: 18633 },
       { durationMonths: 6, interestRate: 0, monthlyInstallment: 9316 }
     ]
   },
   {
     name: "GoPro HERO12 Black",
-    image: "https://m.media-amazon.com/images/I/61T+NItF+9L._SX679_.jpg",
+    image: "https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T1/images/I/611pNKLfqaL._SX679_.jpg",
     basePrice: 37990,
-    description: "Incredible image quality, even better HyperSmooth video stabilization.",
+    description: "Incredible image quality, even better HyperSmooth stabilization.",
     variants: [
-      { name: "Camera Only", price: 37990 },
-      { name: "Creator Edition", price: 57990 }
+      { name: "Camera Only", price: 37990 }
     ],
     emiOptions: [
-      { durationMonths: 3, interestRate: 0, monthlyInstallment: 12663 },
       { durationMonths: 6, interestRate: 8, monthlyInstallment: 6648 }
     ]
   },
   {
-    name: "LG C3 55-inch 4K OLED Smart TV",
-    image: "https://m.media-amazon.com/images/I/81xUhw-o21L._SX679_.jpg",
+    name: "LG C3 55-inch 4K OLED TV",
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?q=80&w=400",
     basePrice: 139990,
     description: "Experience infinite contrast and perfect black levels.",
     variants: [
-      { name: "55-inch", price: 139990 },
-      { name: "65-inch", price: 189990 }
+      { name: "55-inch", price: 139990 }
     ],
     emiOptions: [
-      { durationMonths: 6, interestRate: 0, monthlyInstallment: 23331 },
       { durationMonths: 12, interestRate: 0, monthlyInstallment: 11665 }
     ]
   },
   {
     name: "Garmin Fenix 7X Pro Solar",
-    image: "https://m.media-amazon.com/images/I/61b17V2-GGL._SX679_.jpg",
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400",
     basePrice: 98990,
     description: "Ultimate multisport GPS smartwatch with solar charging.",
     variants: [
-      { name: "Slate Gray with Black Band", price: 98990 },
-      { name: "Titanium with Titanium Band", price: 119990 }
+      { name: "Slate Gray", price: 98990 }
     ],
     emiOptions: [
-      { durationMonths: 3, interestRate: 0, monthlyInstallment: 32996 },
-      { durationMonths: 6, interestRate: 0, monthlyInstallment: 16498 },
-      { durationMonths: 9, interestRate: 8, monthlyInstallment: 11370 }
+      { durationMonths: 6, interestRate: 0, monthlyInstallment: 16498 }
     ]
   }
 ];
